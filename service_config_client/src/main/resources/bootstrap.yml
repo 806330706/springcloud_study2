@@ -1,0 +1,15 @@
+server:
+    port: 15008
+spring:
+    application:
+        name: config-client
+    cloud:
+        config:
+            label: master
+            profile: dev
+            uri: http://localhost:15007/
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9001/eureka/
